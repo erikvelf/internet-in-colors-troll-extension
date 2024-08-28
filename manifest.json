@@ -1,0 +1,24 @@
+    {
+    "manifest_version": 3,
+    "name": "Googol Translator",
+    "description": "Translate websites on the fly with Googol Translate",
+    "version": "3.7",
+
+    "action": {
+        "default_icon": "icon.png"
+    },
+
+
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*/*"
+            ],
+
+            "js": [
+                "index.js"
+            ]
+        }
+    ]
+
+    }
